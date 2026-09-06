@@ -4,13 +4,13 @@
   "description": "Lua language support for CodeMirror 6.",
   "license": "MIT",
   "author": "Zulfazli (Fazelllyyy)",
-  "homepage": "https://github.com/fazel-studio/codemirror-lang-lua#readme",
+  "homepage": "https://github.com/fazelstudio/codemirror-lang-lua#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fazel-studio/codemirror-lang-lua.git"
+    "url": "https://github.com/fazelstudio/codemirror-lang-lua.git"
   },
   "bugs": {
-    "url": "https://github.com/fazel-studio/codemirror-lang-lua/issues"
+    "url": "https://github.com/fazelstudio/codemirror-lang-lua/issues"
   },
   "keywords": [
     "codemirror",
