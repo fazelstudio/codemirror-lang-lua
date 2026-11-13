@@ -44,12 +44,12 @@ const configuredParser = parser.configure({
       "=": t.definitionOperator,
     }),
     indentNodeProp.add({
-      DoBlock: delimitedIndent({closing: "end"}),
-      WhileBlock: delimitedIndent({closing: "end"}),
-      RepeatBlock: delimitedIndent({closing: "until"}),
-      IfStatement: delimitedIndent({closing: "end"}),
-      ForStatement: delimitedIndent({closing: "end"}),
-      FunctionBody: delimitedIndent({closing: "end"}),
+      DoBlock: delimitedIndent({closing: "end", align: false}),
+      WhileBlock: delimitedIndent({closing: "end", align: false}),
+      RepeatBlock: delimitedIndent({closing: "until", align: false}),
+      IfStatement: delimitedIndent({closing: "end", align: false}),
+      ForStatement: delimitedIndent({closing: "end", align: false}),
+      FunctionBody: delimitedIndent({closing: "end", align: false}),
       TableConstructor: delimitedIndent({closing: "}"}),
     }),
     foldNodeProp.add({
@@ -95,7 +95,7 @@ export const luaLanguage = LRLanguage.define({
   parser: configuredParser,
   languageData: {
     commentTokens: {line: "--", block: {open: "--[[", close: "]]"}},
-    indentOnInput: /^\s*(end|else|elseif|until|\)|\])$/,
+    indentOnInput: /^\s*(end|else|elseif|until|\)|\]|\})$/,
     closeBrackets: {brackets: ["(", "[", "{", '"', "'"]},
     wordChars: "_",
     autocomplete: luaCompletion,
